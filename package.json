@@ -1,0 +1,38 @@
+{
+  "name": "midas-events",
+  "version": "1.0.0",
+  "description": "an event management system",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start:prod": "node src/main.js",
+    "start:dev": "nodemon src/main.js",
+    "db:seed": "node src/commands/seed.command.js"
+  },
+  "author": "Martin Ikwuka",
+  "license": "MIT",
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/node": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "@types/jest": "^29.5.13",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0"
+  }
+}
